@@ -1,0 +1,66 @@
+:root{
+    /* ## Layout */
+    --font-family-Out: 'Outfit', sans-serif;
+    /* The designs were created to the following widths:*/
+    
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    
+    /* ## Colors */
+    
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    
+    /* ### Body Copy */
+    
+    --Font_size: 15px;
+    
+    /* ### Font */
+    
+    --Weights: 400, 700;
+}
+@media only screen and (min-width: 1440px) {
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: var(--Light-gray);
+        align-items: center;
+    }
+    
+    .card-container{
+        width: 300px;
+        height: 500 px;
+        margin: 100px auto 0;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: var(--White);
+    }
+    
+    .img-container picture img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .letter-container{
+        font-size: var(--Font_size);
+        padding: 10px;
+    }
+    .letter-container h1{
+        font-family: var(--font-family-Out);
+        color: var(--Dark-blue);
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .letter-container p{
+        font-family: var(--font-family-Out);
+        color: var(--Grayish-blue);
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
